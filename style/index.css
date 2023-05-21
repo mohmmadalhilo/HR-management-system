@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+    main{
+        margin-top: 15px;
+    }
+
+    header{
+        background-color: cornflowerblue;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+
+    }
+    header div{
+
+        display:flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    header h1{
+        color:white;
+        
+        }
+        header ul {
+            display:flex;
+            gap: 10px;
+            
+        
+        }
+        header ul li{
+        
+            list-style: none;
+            
+           
+        }
+        
+        header ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: cornflowerblue;
+
+        
+            padding-top: 4px;
+            color: #fff;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content p{
+            margin: 5px auto;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+            padding: 3px;
+        }
+        .socials a i{
+            width: 20px;
+        }
+       
+        .footer-bottom{
+            background: cornflowerblue;
+            padding: 5px;
+        padding-bottom: 5px;
+            text-align: center;
+        }
+        .footer-bottom p{
+        float: left;
+            font-size: 12px;
+            word-spacing: 2px;
+            
+        }
+        .footer-bottom p a{
+          color:black;
+          font-size: 12px;
+          text-decoration: none;
+        }
+       
+        .footer-menu{
+          float: right;
+        
+        }
+        .footer-menu ul{
+          display: flex;
+        }
+        .footer-menu ul li{
+        padding-right: 10px;
+        display: block;
+        }
+        .footer-menu ul li a{
+          color: #cfd2d6;
+          text-decoration: none;
+        }
