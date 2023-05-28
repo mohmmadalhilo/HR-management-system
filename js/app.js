@@ -27,23 +27,61 @@ function Employee (fullName,department,Level,imageURL) {
     allEmployee.push(this);
 
 }
+
+
+
+
 Employee.prototype.renderEmp= function(){
     
-    document.write(`<h3>Employee name:   ${this.fullName}  </h3>`);
-    document.write(`<h3>Department:   ${this.department}  </h3>`);
-    document.write(`<h3>Employee Salary:   ${this.salary()}  </h3>`);
-    document.write("<br>");
+    let main=document.getElementsByTagName("main")[0];
+    let div=document.createElement("div");
+    main.appendChild(div);
+
+    let img=document.createElement("img");
+    img.src=this.imageURL;
+    div.appendChild(img);
+
+    let name=document.createElement("h5");
+    name.textContent=`Name: ${this.fullName} - ID: ${this.employeeID}`;
+    div.appendChild(name);
+
+    let dep=document.createElement("h5");
+    dep.textContent=`Department: ${this.department} - Level: ${this.Level}`;
+    div.appendChild(dep);
+
+    let salary=document.createElement("h5");
+    salary.textContent=`Salary: ${this.salary()}`;
+    div.appendChild(salary);
+
+
+    div.style.backgroundColor = "#477d57";
+    div.style.color="white";
+    div.style.margin="10px";
+    div.style.width="350px";
+    div.style.height="400px";
+    main.style.display ="flex";
+    main.style.flexWrap="wrap";
+    div.style.textAlign="center";
+    main.style.justifyContent="center";
+    div.style.borderRadius="10px";
+    div.style.lineHeight="1.7";
+    main.style.alignContent="center";
+    img.style.width="280px";
+    img.style.height="280px";
+    img.style.margin="15px";
+
+
 
 }
 
 
-let employee1= new Employee("Ghazi Samer" ,"Administration","Senior","./assets/ersonal.svg.png" );
-let employee2= new Employee("Lana Ali" ,"Finance","Senior","./assets/Personal-loan.png" );
-let employee3= new Employee("Tamara Ayoub" ,"Marketing","Senior","./assets/ersonal.svg.png" );
-let employee4= new Employee("Safi Walid" ,"Administration","Mid-Senior","./assets/Personal-loan.png" );
-let employee5= new Employee("Omar Zaid" ,"Development","Senior","./assets/ersonal.svg.png" );
-let employee6= new Employee("Rana Saleh" ,"Development","Junior","./assets/ersonal.svg.png" );
-let employee7= new Employee("Hadi Ahmad" ,"Finance","Mid-Senior","./assets/Personal-loan.png" );
+let employee1= new Employee("Ghazi Samer" ,"Administration","Senior","./assets/Ghazi.jpg" );
+let employee2= new Employee("Lana Ali" ,"Finance","Senior","./assets/Lana.jpg" );
+let employee3= new Employee("Tamara Ayoub" ,"Marketing","Senior","./assets/Tamara.jpg" );
+let employee4= new Employee("Safi Walid" ,"Administration","Mid-Senior","./assets/Safi.jpg" );
+let employee5= new Employee("Omar Zaid" ,"Development","Senior","./assets/Omar.jpg" );
+let employee6= new Employee("Rana Saleh" ,"Development","Junior","./assets/Rana.jpg" );
+let employee7= new Employee("Hadi Ahmad" ,"Finance","Mid-Senior","./assets/Hadi.jpg" );
 
 for(let i=0;i<allEmployee.length;i++){
     allEmployee[i].renderEmp();
@@ -58,11 +96,5 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min); 
   }
 
-  console.log(employee.employeeID);
-  console.log(employee2.employeeID);
-  console.log(employee3.employeeID);
-  console.log(employee4.employeeID);
-  console.log(employee5.employeeID);
-  console.log(employee6.employeeID);
-  console.log(employee7.employeeID);
-  
+
+

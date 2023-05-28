@@ -4,3 +4,4 @@
 
 <h2>render method to be a prototype method using document.write<h2>
 
+<h2>render prototype method to render each employee's information in a separate card on the home page</h2>
