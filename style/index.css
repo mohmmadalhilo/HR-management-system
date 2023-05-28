@@ -2,12 +2,19 @@
     padding: 0;
     margin: 0;
     }
+    body{
+        font-family: 'Arvo', serif;
+        font-family: 'Lora', serif;
+        position: absolute;
+        
+    }
     main{
+        
         margin-top: 15px;
     }
 
     header{
-        background-color: cornflowerblue;
+        background-color: #A4D0A4;
         display:flex;
         justify-content: space-around;
         align-items: center;
@@ -56,11 +63,11 @@
 
 
         footer{
-            position: absolute;
+            
             bottom: 0;
             left: 0;
             right: 0;
-            background: cornflowerblue;
+            background: #A4D0A4;
 
         
             padding-top: 4px;
@@ -98,13 +105,13 @@
         }
        
         .footer-bottom{
-            background: cornflowerblue;
+            background: #A4D0A4;
             padding: 5px;
         padding-bottom: 5px;
             text-align: center;
         }
         .footer-bottom p{
-        float: left;
+        
             font-size: 12px;
             word-spacing: 2px;
             
@@ -116,7 +123,8 @@
         }
        
         .footer-menu{
-          float: right;
+          
+          
         
         }
         .footer-menu ul{
@@ -127,6 +135,6 @@
         display: block;
         }
         .footer-menu ul li a{
-          color: #cfd2d6;
+          color: white;
           text-decoration: none;
         }
